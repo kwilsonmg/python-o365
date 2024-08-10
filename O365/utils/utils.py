@@ -1036,6 +1036,8 @@ class Query:
         """
         return self.logical_operator('ne', word)
 
+    not_equal = unequal
+
     @fluent
     def greater(self, word):
         """ Add a greater than check
